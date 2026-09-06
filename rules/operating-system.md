@@ -2,7 +2,15 @@
 
 > The hooks in this repository are the enforcement layer. They are the smallest part of what makes agents useful. This file is the rest of it.
 
-Most teams that put coding agents on real code get a 30% speedup and a mess. The model is not the variable. Everything around it is, and it has to be engineered deliberately — one layer at a time, each layer earning its place by fixing a failure that actually happened.
+The hard problem was never getting a machine to write code. It was learning to trust work I did not do.
+
+An agent does not lie to you. It does something harder to catch: it reports success in exactly the voice it would have used if it were right. So the work passes through layers, and every layer is here because something once got through.
+
+None of this was designed. Every rule in it is a scar.
+
+> A mistake becomes a rule. A rule that matters becomes a hook. A hook is a mistake that cannot happen again.
+
+Which is why the system grows faster as it grows stricter — the reverse of what everyone expects, and the whole reason one person can carry this much.
 
 These are the six layers, in the order they pay off.
 
