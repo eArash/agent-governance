@@ -45,7 +45,8 @@ An agent that has been *told* not to force-push will eventually force-push. A `P
 
 ```
 hooks/          PreToolUse / PostToolUse / Stop hooks — the enforcement layer
-rules/          the doctrine an agent reads before it acts (start with verification.md)
+rules/          the doctrine an agent reads before it acts (start with verification.md,
+                then operating-system.md for the six layers around the guards)
 failures/       ten dated, real failure modes, each with its guard
 install.sh      copies the hooks in — after running every self-test and refusing if one fails
 settings.example.json
@@ -74,7 +75,7 @@ cd agent-governance
 
 `install.sh` runs every guard's self-test FIRST and refuses to install if one fails, then copies the hooks and prints the `settings.json` fragment for you to merge by hand.
 
-Then read [`rules/verification.md`](rules/verification.md) first. It is short, and it is the one that does most of the work.
+Then read [`rules/verification.md`](rules/verification.md) — short, and the one that does most of the work — followed by [`rules/operating-system.md`](rules/operating-system.md), which is the six layers the hooks sit inside: context, task specification, orchestration, review, instruments, and the compounding that makes speed and quality rise together instead of trading off.
 
 ---
 
