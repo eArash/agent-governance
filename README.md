@@ -18,7 +18,7 @@ The dangerous failures are different. In nine months of running agents against a
 
 A wrong edit gets reviewed. A wrong measurement gets *trusted*.
 
-Ten of those 93 are documented in [`failures/`](failures/). Every one actually happened, on a system with paying customers. Each carries the mechanism and the rule that now prevents it.
+Thirty-four of those 93 are documented in [`failures/`](failures/). Every one actually happened, on a system with paying customers. Each carries the mechanism and the rule that now prevents it.
 
 ---
 
