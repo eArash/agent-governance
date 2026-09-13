@@ -2,7 +2,7 @@
 
 **A control system for letting AI coding agents write production code — without letting them break it.**
 
-I built a regulated e-signature platform alone in 70 days by having coding agents write nearly all of it. The platform is live: 3.7× the monthly contract volume of the system it replaced, and 99.97% of 1,625,586 requests served without a server error.
+I built a regulated e-signature platform alone in 70 days by having coding agents write nearly all of it. The platform is live: 3.7× the monthly contract volume of the system it replaced, and 99.97% of 2,046,586 requests served without a server error.
 
 That did not happen because the agents were good. It happened because a stricter system decided whether what they wrote was allowed to ship.
 
@@ -14,11 +14,11 @@ This repository is that system, generalised: the hooks, the rules, the failure c
 
 A coding agent that writes a wrong function is a small problem. Your tests catch it.
 
-The dangerous failures are different. In eight months of running agents against a live codebase I recorded **79 distinct ways they broke things** — and almost none of them were coding errors. They were **measurement errors**: a check that could not fail, a zero read as health, a grep that matched a comment, a regex that failed to compile and returned `null` into a file write.
+The dangerous failures are different. In nine months of running agents against a live codebase I recorded **93 distinct ways they broke things** — and almost none of them were coding errors. They were **measurement errors**: a check that could not fail, a zero read as health, a grep that matched a comment, a regex that failed to compile and returned `null` into a file write.
 
 A wrong edit gets reviewed. A wrong measurement gets *trusted*.
 
-Ten of those 79 are documented in [`failures/`](failures/). Every one actually happened, on a system with paying customers. Each carries the mechanism and the rule that now prevents it.
+Ten of those 93 are documented in [`failures/`](failures/). Every one actually happened, on a system with paying customers. Each carries the mechanism and the rule that now prevents it.
 
 ---
 
@@ -81,7 +81,7 @@ Then read [`rules/verification.md`](rules/verification.md) — short, and the on
 
 ## What this is not
 
-It is not a benchmark, a framework, or a wrapper around a model. It is 367 lines of shell and a set of written rules. The value is not the code — it is the **catalogue of what actually goes wrong**, which took a live production system and eight months to collect.
+It is not a benchmark, a framework, or a wrapper around a model. It is 367 lines of shell and a set of written rules. The value is not the code — it is the **catalogue of what actually goes wrong**, which took a live production system and nine months to collect.
 
 If you are running agents against code that people pay to use, read [`failures/`](failures/) before you read anything else here. It will save you at least one incident.
 
