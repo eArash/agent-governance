@@ -87,8 +87,6 @@ That is why the failure list in [`failures/`](../failures/) is the most valuable
 
 ## What this looked like in practice
 
-One person, seventy days, from a one-page brief to a live regulated e-signature platform — qualified signature through a licensed certificate authority, identity verification, a form builder, a public API — carrying two years of migrated data. Against the platform it replaced, by month four: 3.7× the contracts, 2.9× the revenue, 99.97% of 1,625,586 requests without a server error.
-
-The agents wrote most of the code. This is the system that decided what was allowed to ship.
+A regulated e-signature platform went from a one-page brief to production in seventy days, carrying two years of migrated data: qualified signatures through a licensed certificate authority, identity verification, a form builder and a public API. In September 2026 it handled 2,167 contracts against 372 in the best month of the platform it replaced, and served 99.98% of 490,936 external requests without a server error.
 
 It is also portable. It came from a chatbot, went to an AI tutor, then to a regulated platform, and it survived each move intact — because none of it is about the domain, and none of it is about which model you use this month.

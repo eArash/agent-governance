@@ -1,6 +1,6 @@
 # 34 ways a coding agent broke production
 
-Every entry below actually happened, on a live platform with paying customers, between January and September 2026. They are drawn from a private catalogue of 93.
+Every entry below actually happened, on a live platform with paying customers, between January and September 2026. They are drawn from a private catalogue of 100.
 
 They are ordered by how convincingly each one *looked fine*.
 
